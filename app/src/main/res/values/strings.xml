@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Pathfinding</string>
+    <string name="no_path">没有路可以走</string>
+    <string name="no_start_or_end">必须设置起点和终点</string>
+</resources>
