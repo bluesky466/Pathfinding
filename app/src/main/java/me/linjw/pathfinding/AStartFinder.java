@@ -175,7 +175,7 @@ public class AStartFinder implements IPathFinder {
             }
 
             if ((point.getDistanceTotal() < cmp.getDistanceTotal())
-                    || point.getDistanceToStart() < cmp.getDistanceToStart()) {
+                    || point.getDistanceToEnd() < cmp.getDistanceToEnd()) {
                 it.previous();
                 it.add(point);
                 return;
@@ -229,6 +229,10 @@ public class AStartFinder implements IPathFinder {
 
         int getDistanceToStart() {
             return distanceToStart;
+        }
+
+        int getDistanceToEnd() {
+            return distanceToEnd;
         }
 
         void setDistanceToStart(int distanceToStart) {
